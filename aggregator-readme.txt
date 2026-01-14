@@ -6,7 +6,7 @@ Commercial: https://www.wprssaggregator.com/pricing/
 Requires at least: 5.5 or higher
 Tested up to: 6.9
 Requires PHP: 7.4.0
-Stable tag: 5.0.10
+Stable tag: 5.0.11
 License: GPLv3
 
 The #1 WordPress RSS aggregator to quickly import RSS feeds, build a news aggregator, and for easy autoblogging.
@@ -263,6 +263,17 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 
 
 == Changelog ==
+
+= 5.0.11 (2026-01-14) =
+
+**Changed**
+- Improved consistency and safety of rendered HTML output.
+
+**Fixed**
+- Featured images are now correctly imported from RSS feeds where images are served via a CDN.
+- Resolved an issue where sources migrated from v4 to v5 could have their post type incorrectly set to "Post" instead of "Feed Item" on Free and Basic plan licenses.
+- Hardened display rendering logic to improve robustness.
+- Improved handling of user-supplied data in shortcode processing.
 
 = 5.0.10 (2025-12-16) =
 
@@ -583,7 +594,8 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - URLs added manually to the blacklist are now properly validated.
 - Feed sources and feed items restored from the trash become "draft" since WordPress 5.6.
 
-= 4.19.1 (2021-09-14)
+= 4.19.1 (2021-09-14) =
+
 **Changed**
 - More details are now logged when a fatal error occurs during an import.
 - Using local versions of images and stylesheets.
@@ -593,7 +605,8 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Some request data was not filtered and/or sanitized properly.
 - Some plugin-generated content was not properly escaped for use in HTML.
 
-= 4.19 (2019-07-06)
+= 4.19 (2019-07-06) =
+
 **Added**
 - Support for importing images from `<image>` tags.
 
@@ -601,6 +614,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Exceptions thrown during an import and caught and logged.
 
 = 4.18.2 (2021-04-26) =
+
 **Changed**
 - Audio players no longer preload the audio file. Audio is now loaded only the play button is clicked.
 
@@ -611,6 +625,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - The shortcode icon in the classic editor would sometimes not be shown.
 
 = 4.18.1 (2021-03-15) =
+
 **Added**
 - New filters to change the time limits during image downloads.
 
@@ -622,6 +637,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Licenses for the Templates addon could not be verified.
 
 = 4.18 (2021-03-08) =
+
 **Added**
 - The total import time is now recorded in the debug log.
 
@@ -638,10 +654,12 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - The max title length option in the "Default" template was being applied in the "Feed Items" page.
 
 = 4.17.10 (2020-12-01) =
+
 **Fixed**
 - After updating the Templates add-on from v0.2, the add-on would be deactivated.
 
 = 4.17.9 (2020-11-25) =
+
 **Changed**
 - Auto image detection is now able to find the feed channel image.
 - SimplePie auto-discovery is turned off when the "Force feed" option is enabled.
@@ -655,6 +673,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Problems with the default template no longer trigger a fatal error.
 
 = 4.17.8 (2020-10-06) =
+
 **Changed**
 - Disabled SimplePie's HTML sanitization.
 - Updated jQuery code to be compatible with the upcoming update in WordPress.
@@ -669,7 +688,8 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Sites on a multi-site network would see an error about a function not existing.
 - Errors would not be properly rendered for non-fatal notices and warnings.
 
-= 4.17.7 (2020-08-12)
+= 4.17.7 (2020-08-12) =
+
 **Added**
 - New HTML classes for pagination buttons.
 
@@ -680,6 +700,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - FeedBurner feeds no longer need to have "format=xml" at the end of the URL.
 
 = 4.17.6 (2020-07-29) =
+
 **Added**
 - A link in the New/Edit Feed Source page on how to find an RSS feed.
 
@@ -696,6 +717,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Image options would not show up when using Feed to Post to import Feed Items.
 
 = 4.17.5 (2020-04-22) =
+
 **Changed**
 - Now showing a case study of a site using the Pro Plan in the on-boarding wizard.
 - Licenses are now managed by the main site. Child sites do not have access to the licenses page.
@@ -709,6 +731,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Removed the integration with Lorem on the "More Features" page.
 
 = 4.17.4 (2020-03-16) =
+
 **Changed**
 - The default template is now created based on type, not slug.
 
@@ -721,6 +744,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Better error messages when an error occurs.
 
 = 4.17.3 (2020-01-23) =
+
 **Changed**
 - Updated code to fix deprecation warnings on PHP version 7.4 and later.
 - Updated the Twig library to version `1.41.0` to fix deprecation warnings on PHP version 7.4 and later.
@@ -735,6 +759,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Missing space between the link `a` tag and the `href` attribute on PHP 7.4
 
 = 4.17.2 (2019-12-19) =
+
 **Added**
 - The error handler now includes the file and line where the error occurred.
 
