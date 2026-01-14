@@ -6,7 +6,7 @@ Commercial: https://www.wprssaggregator.com/pricing/
 Requires at least: 5.5 or higher
 Tested up to: 6.9
 Requires PHP: 7.4.0
-Stable tag: 5.0.11
+Stable tag: 5.0.10
 License: GPLv3
 
 The #1 WordPress RSS aggregator to quickly import RSS feeds, build a news aggregator, and for easy autoblogging.
@@ -265,6 +265,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 == Changelog ==
 
 = 5.0.10 (2025-12-16) =
+
 **Fixed**
 - Fixed a fatal error that could occur when enabling Allow Embedded Content while saving a feed source in Aggregator v4.
 
@@ -272,10 +273,12 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Added admin notices to communicate Aggregator v4 end-of-life status and guide users through migration to v5. The v4 end-of-life date has been extended to January 31, 2026, during which support will continue to be provided to allow additional time for migration.
 
 = 5.0.9 (2025-12-09) =
+
 **Changed**
 - Updated v4 to use the latest SimplePie methods for better compatibility with newer WordPress versions. This is a backwards-compatibility fix and may not remain reliable long-term, so we strongly recommend upgrading to v5.
 
 = 5.0.8 (2025-12-02) =
+
 **Fixed**
 - Migration notice in v4 can now be dismissed.
 - Sources imported as posts now link to their corresponding imported posts in displays.
@@ -285,6 +288,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Signup email now sends as expected.
 
 = 5.0.7 (2025-11-24) =
+
 **Added**
 - Black Friday offer prompts for free users.
 
@@ -292,6 +296,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Updated the Manage Plan page for premium users.
 
 = 5.0.6 (2025-10-22) =
+
 **Added**
 - Embedded feature overview videos to highlight what’s available in higher plans.
 
@@ -299,10 +304,12 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Multisite license activation now applies network-wide when activated from the Network Admin, restoring expected v4 behavior.
 
 = 5.0.5 (2025-10-15) =
+
 **Changed**
 - Updated plan pricing in the Manage Plan page.
 
 = 5.0.4 (2025-09-30) =
+
 **Added**
 - Full Spanish translation.
 
@@ -314,6 +321,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Issue where certain licenses blocked Premium plugin updates incorrectly.
 
 = 5.0.3 (2025-09-16) =
+
 **Added**
 - Restored embedded content support – imported posts once again include embeds such as the YouTube video player (parity with v4).
 - Version compatibility check – prevents activating mismatched free/premium versions to avoid critical errors.
@@ -328,10 +336,12 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Free version importing images into the Media Library even though they weren’t used.
 
 = 5.0.2 (2025-08-26) =
+
 **Fixed**
 - Premium updates were not being detected correctly in v5.0.0 and v5.0.1 due to a configuration issue.
 
 = 5.0.1 (2025-08-14) =
+
 **Added**
 - Migration block that prevents add-on users from upgrading to v5 without the Premium plugin installed and activated, avoiding feature loss and confusion.
 
@@ -346,6 +356,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Corrected feed validation in v5 so that valid feeds are recognized, even if affected by default User Agent handling.
 
 = 5.0.0 (2025-07-24) =
+
 **Added**
 - Fully rebuilt **user interface** with a modern design and improved navigation
 - **Feed Items**: Now in its own sidebar section, no longer nested under Aggregator
@@ -394,22 +405,27 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
     - Many custom actions and filters (e.g. wprss_ftp_post_args) have been removed or refactored in v5. Custom code relying on these may no longer function correctly.
 
 = 4.23.12 (2024-07-15) =
+
 **Fixed**
 - Fixed a security vulnerability that allows subscribers to pause feed sources (CVE-2024-6621).
 
 = 4.23.11 (2024-05-28) =
+
 **Fixed**
 - The previous version introduced a bug that omitted the user-agent header from RSS feed requests.
 
 = 4.23.10 (2024-05-20) =
+
 **Fixed**
 - Some feeds were wrongly deemed to be invalid due to how cURL sends the user-agent string.
 
 = 4.23.9 (2024-05-13) =
+
 **Fixed**
 - Fixed a cross-site scripting vulnerability when an admin notice ID is invalid.
 
 = 4.23.8 (2024-04-25) =
+
 **Added**
 - Prepared notices and messages for the upcoming v5.0 update.
 
@@ -421,14 +437,17 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Compatibility with the "Widget Options" plugin.
 
 = 4.23.7 (2024-02-28) =
+
 **Fixed**
 - Media thumbnail images without a MIME type were not being properly detected.
 
 = 4.23.6 (2024-01-31) =
+
 **Changed**
 - Error information is suppressed for feeds with local address URLs. This improves the previous fix for CVE-2024-0628.
 
 = 4.23.5 (2024-01-24) =
+
 **Fixed**
 - Error messages no longer reveal information about potentially inaccessible resources. (CVE-2024-0628)
 - JavaScript code in feed item URLs is now properly sanitized and escaped. (CVE-2024-0630)
@@ -436,6 +455,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - The Templates page did not load properly on some websites.
 
 = 4.23.4 (2023-11-18) =
+
 **Added**
 - Black Friday offer links.
 
@@ -443,10 +463,12 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Updated the "More Features" page.
 
 = 4.23.3 (2023-11-01) =
+
 **Changed**
 - Disabled the deactivation poll.
 
 = 4.23.2 (2023-09-29) =
+
 **Added**
 - An important notice regarding the upcoming major update that will require PHP 7.4 or higher.
 
@@ -458,10 +480,12 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Corrected how image are searched in the content and excerpt of an item.
 
 = 4.23.1 (2023-04-10) =
+
 **Fixes**
 - Fixed an error in the block that prevented it from being edited and previewed.
 
 = 4.23 (2023-04-06) =
+
 **Added**
 - New users can now sign up to receive a free starter guide.
 - YouTube feeds now provide the video description, which is now imported into feed items.
@@ -475,15 +499,18 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Sorting feed items by date now works as expected.
 
 = 4.22.4 (2023-02-08) =
+
 **Added**
 - Images in RSS item excerpts are now properly detected.
 - New `wpra/images/file_name` filter to change the filename of imported images.
 
 = 4.22.3 (2023-02-01) =
+
 **Added**
 - New filter to disable the scrolling animation when clicking on pagination links in templates. [See docs](https://kb.wprssaggregator.com/article/861-disable-the-pagination-scroll-effect).
 
 = 4.22.2 (2022-12-19) =
+
 **Changed**
 - Code changes for PHP 8.0 compatibility.
 - Code changes for partial PHP 8.1 compatibility. The plugin still triggers some warnings on PHP 8.1, but should work fine.
@@ -493,6 +520,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - Removed the 2022 feedback survey.
 
 = 4.22.1 (2022-11-23) =
+
 **Added**
 - Promotion for Black Friday and Cyber Monday 2022 deals.
 - Notification for the 2022 feedback survey.
@@ -501,14 +529,17 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - The custom feed was missing the `<published>` date tag.
 
 = 4.22 (2022-08-06) =
+
 **Changed**
 - YouTube embeds in the lightbox now begin playing automatically, if the browser allows it.
 
 = 4.21.1 (2022-07-20) =
+
 **Fixed**
 - An out-of-memory PHP error when importing items.
 
 = 4.21 (2022-07-13) =
+
 **Changed**
 - Updated Twig to v1.42.2, to support PHP 8 or later.
 - Optimized feed item date processing when an item is being imported.
@@ -519,6 +550,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 - The classic editor button was generating incorrect shortcodes.
 
 = 4.20 (2022-01-18) =
+
 **Added**
 - New option to use feed item GUIDs instead of permalinks to detect duplicate items.
 
