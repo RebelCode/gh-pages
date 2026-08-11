@@ -264,7 +264,7 @@ Our complete Help Center with FAQs, Glossary, and Video Library can be found [he
 
 == Changelog ==
 
-= 5.4.0 (2026-08-10) =
+= 5.4.0 (2026-08-11) =
 
 **Added**
 - Added a date and time column to the Hub so imported and pending items are easier to review.
